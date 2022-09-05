@@ -1,0 +1,680 @@
+body{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #10E6CD;
+    background-color: #262626;
+    margin: 0;
+    }
+
+/* Style the navbar */
+.navigation {
+    overflow: hidden;
+    background-color: #000000;
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    height: 56px;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+/*Align the div for the Links to the right side*/
+.navigation_links {
+    width: auto;
+    float: right;
+}
+
+/* links in der Navbar --- Links werden als Klasse angeprochen, damit der Link hinter dem Logo sein eigenes Design haben kann  */
+a.normal {
+  float: left;
+  font-size: 18px;
+  font-weight: 800px;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  line-height: 22px;
+}
+/* Hier wird das Design für das Logo, was auch als Link fungiert, definiert*/
+a.logo{
+    font-family: 'Racing Sans One', cursive;
+    color: #10E6CD;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 57px;
+    text-align:  center;
+    vertical-align: middle;
+    line-height: 57px;
+    padding-left: 1%;
+    }
+
+/*make links tourquise when hovering*/
+.navigation a:hover {
+    color: #10E6CD;
+    }
+
+/*Das Bild, was als anmeldebutton dient, wird hier designt*/
+.anmelden_img {
+    height: 25px;
+}
+
+/*Der Footer wird hier designt*/
+ .footer {
+    width: 100%; 
+    height: 174px; 
+    float: left; 
+    background-color: #262626; 
+    margin: auto;
+    }
+    
+    .footer_box{
+    width: 20%; 
+    height: 100px; 
+    float: left; 
+    background-color: #262626; 
+    float: left; 
+    margin: 10px 35px; 
+    }
+        
+    .footer_text {
+    text-align: left; 
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400; 
+    font-size: 16px;
+    margin: 2px;
+    color: #ffffff;
+    }
+    
+    .footer_links {
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    font-weight: 400; 
+    font-size: 16px;
+    margin: 2px;
+    text-align: left;
+    }
+
+    a.footer_links:hover {
+    color: #10E6CD
+    }
+        
+    a.logo_footer{
+    font-family: 'Racing Sans One', cursive;
+    color: #10E6CD;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    text-align:  center;
+    }
+        
+    .footer_h {
+    text-align: left; 
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800; 
+    font-size: 16px;  
+    line-height: 20px;
+    display: flex; 
+    align-items: center;
+    }
+
+/*Produktübersichtsseite -> Alles was mit den Filtern zu tun hat*/
+    .Filterbox{
+    width: 95%;
+    background: #3C3C3C;
+    height: auto;
+    margin: auto;
+    border-radius: 4px;
+    padding-bottom: 10px;
+    }
+
+    .filterzeile{
+        margin: auto;
+    }
+
+    .filter{
+        float: left;
+        margin-left: 2.109375%;
+    }
+
+    input[type=submit]{
+        width: auto;
+        min-width: 9.453125%;
+        height: 35px;
+        box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.5);
+        background-color: #EF5C21;
+        border: none;
+        border-radius: 3px; 
+        color: #ffffff;    
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    input[type=date]{
+        width: 121px;
+        height: 35px;
+        background-color: rgba(217,217,217, 0.26);
+        border: 1px solid black;
+        border-radius: 3px;
+        color: white;
+    }
+
+    input[type=number]{
+        width: 121px;
+        height: 35px;
+        background-color: rgba(217,217,217, 0.26);
+        border: 1px solid black;
+        border-radius: 3px;
+        color: white;
+    }
+    
+     input[type=checkbox]{
+        background-color: rgba(217,217,217, 0.26);
+        border: 1px solid black;
+        border-radius: 3px;
+        color: white;
+        height: 20px;
+        width: 20px;
+    }
+        
+    select {
+        border: 1px solid black;
+        border-radius: 3px;
+        background-color:rgba(217,217,217, 0.26);
+        color: white;
+        height: 35px;
+        padding-left: 1px;
+        padding-right: 1px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 10px;
+    }
+
+    option[value=""][disabled] {
+      display: none;
+    }
+
+    label {
+        color: #ffffff;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .dropbtn {
+      background-color: #404040;
+      color: white;
+      font-size: 16px;
+      height: 35px;
+      border: none;
+      border-radius: 3px;
+      margin-left: 27px;
+    }
+
+    .dropbtn:hover, .dropbtn:focus {
+      background-color: #10E6CD;
+    }
+
+
+    .dropdown {
+        position: relative;
+        display: inline;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: relative;
+      width: 100%;
+      overflow: auto;
+    }
+
+    .show {display: block;}
+
+    /* Produktübersichtsseite_initiel -> Hier wird das Begrüßungsbild, sowie der Text auf dem Begrüßeungsbild designt*/
+      .content_car_background {
+            background-image: url(street_background.jpg);
+            height: 740px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .ubersicht_text {
+            margin: auto;
+            width: 600px;
+            text-align: center;
+            color: #ffffff;
+            font-size: 40px;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 600; 
+        }
+
+        /* Produktübersichtsseite -> Hier werden die Links für das Zurücksetzen der Filter und der gesamten Auswahl designt.*/
+
+        a.zurucksetzen {
+        color: #ffffff;
+        text-decoration: none;
+        font-family: "Montserrat", sans-serif;
+        font-size: 13px;
+        line-height: 35px;
+        }
+        
+        .zurucksetzen:hover{
+            color: #10E6CD;
+        }
+
+/* Produktübersichtsseite ->Hier wird die Paging funktion designt*/
+        .ergebnisinfos {
+            display: flex;
+            justify-content: space-between; 
+            padding-left: 10px;
+            padding-right: 10px; 
+            width: 100%;
+        }
+        
+        .ergebnisinfos_text{
+            color:#ffffff;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 16px;
+            line-height: 20px
+        }
+    
+        .paging_button_produktubersicht {
+        color: #ffffff;
+        text-decoration: none;
+        font-family: "Montserrat", sans-serif;
+        font-size: 16px;
+        }
+    
+        .paging_button_produktubersicht:hover{
+            color: #10E6CD;
+        }
+
+
+/*Die Registerkarten*/
+    .car {
+        width: 278px;
+        height: 303px;
+        background-color:#b3b3b3;
+        border-radius: 16px;
+        box-shadow: 0px 10px 5px 5px rgba(0, 0, 0, 0.25);
+        float: left;
+        margin: 2% 1% 2% 1%;
+        padding: 10px 10px 10px 10px;
+    }
+    
+    .car_img {
+        width: 218px;
+        height:  111px;
+        margin-top: 9px;
+        margin-left: 22px;
+    }
+
+    .car_img_img{
+        width: 100%;
+        height: 100%;
+        }
+    
+    .autoname {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 37px;
+        color: #ffffff;
+        margin-top: 16px;
+        margin-left: 22px;
+        }
+
+    .autotyp {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #ffffff;
+        margin-left: 22px;  
+        }
+
+    .anzahl {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+        margin-left: 22px;
+        margin-top: 10px;
+        }
+
+    .preis {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 25px;
+        line-height: 30px;
+        color: #EF5C21;
+        margin-left: 22px;
+        margin-top: 11px;
+        }
+
+    .gesamtpreis {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #ffffff;
+        margin-left: 23px;
+        }
+
+/* content auf der Produktübersichtsseite */
+content_car{
+        width: 95%;
+        height: 750px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: auto;
+        }
+
+/* content auf der Meine_Buchungen Seite */
+.content_meineBuchungen {
+    width: 1178px;
+    margin: auto;
+}
+
+/*Die Überschrift über der Tabelle auf der meine Buchungen Seite*/
+.meineBuchungen_uberschrift {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    margin-top: 2%;
+    color: #ffffff;
+}
+
+/*Die Tabelle auf der meine Buchungen Seite. Sie ist in einen immer gleich großen Div eingebettet*/
+    .buchungen_table_div {
+        width: 1178px;
+        background: #3C3C3C;
+        border-radius: 16px;
+        height: 400px;
+    } 
+
+     .tabelleninfos {
+            display: flex;
+            justify-content: space-between; 
+            padding-left: 10px;
+            padding-right: 10px;  
+        }
+        
+        .tabelleninfos_text{
+            color:#ffffff;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 16px;
+            line-height: 20px
+        }
+
+        .paging_button {
+        color: #ffffff;
+        text-decoration: none;
+        font-family: "Montserrat", sans-serif;
+        font-size: 16px;
+        line-height: 35px;
+        }
+        .paging_button:hover{
+            color: #10E6CD;
+        }
+
+        .buchungen_table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        .table_header {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 24px;
+            line-height: 29px;
+            align-items: center;
+            color: #ffffff;
+            border-bottom: 3pt solid #10E6CD;
+            height: 65px;
+            padding-left: 10px;
+        }
+        
+        .table_content {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 20px;
+            line-height: 24px;
+            align-items: center;
+            color: #ffffff;
+            height: 65px;
+            padding-left: 5px;
+        }
+        
+        .table_img {
+            height: 65px;
+        }
+        
+        .buchungen_td {
+           padding-left: 10px;
+        }
+
+
+.logo{
+    font-family: 'Racing Sans One', cursive;}
+
+/* content */
+.content{
+        width: 100%;
+        height: 665px;
+        }
+
+h2{font-weight: 800;
+    font-size: 30px;
+    line-height: 37px;
+
+    align-items: center;
+    color: #8AF6E9;
+    }
+
+/* car.description */
+.car.description{
+    width: 70%;
+    height: 250px;
+    background: #3C3C3C;
+    }
+
+ .autobild{ float: left;
+    width: 400px;}
+
+ .text.car.description
+    {float: right;
+    width: 50%;
+    height: 250px;}
+
+
+.stadt.auto{float: left;}
+
+  /* Auswählen */
+.button.orange{float:right;
+    width: 100px;
+    height: 30px;
+    background: #EF5C21;
+    box-shadow: 0px 4px 4px 7px rgba(0, 0, 0, 0.5);
+
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;}
+
+/* hinweis */
+.hinweis{
+width: 400px;
+height: 17px;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+
+color: #262626;
+
+background: #FFFFFF;
+box-shadow: 0px 7px 4px 7px rgba(0, 0, 0, 0.5);}
+
+/* Style für die Homepage */
+
+/* Dynamisches Element: Festes Hintergrundbild scrollender Text */
+body, html {
+  height: 5000px;
+}
+
+.parallax_1 {
+  /* The image used */
+  background-image: url('images/background-home.jpg');
+
+  /* Full height */
+  height: 602px;
+      position: relative;
+    border: 1px solid pink;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax_2 {
+    /* The image used */
+    background-image: url('images/background-home.jpg');
+
+    /* Full height */
+    height: 7.5%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .parallax_3 {
+      /* The image used */
+      background-image: url('images/background-home.jpg');
+
+      /* Full height */
+      height: 25%;
+
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+  /* Filter_klein */
+
+.filter_klein {
+  position: absolute;
+  width: 430px;
+  height: 395px;
+  left: 6%;
+  top: 19.7%;
+  background: #262626;
+  border-radius: 16px;
+ }
+
+/* Filterbox_Ort */
+
+ .filterbox_Ort {
+   position: absolute;
+     width: 308px;
+     height: 35.57px;
+     left: 49px;
+     top: 192.93px;
+     background-color: #555555;
+     border-style: black, solid, 2px;
+     border-radius: 2px;}
+
+/* Filterbox_Datum*/
+
+.filterbox_Datum {
+        position: absolute;
+          width: 142px;
+          height: 35.57px;
+          left: 49px;
+          top: 270.39px;
+          background-color: #555555;
+          border-style: black, solid, 2px;
+          border-radius: 2px;}
+
+/* Auf geht's button */
+.button_aufgehts {
+          position: absolute;
+          width: 121px;
+          height: 35px;
+          left: 236px;
+          top: 335px;
+          background: #EF5C21;
+          box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.5);
+          border-radius: 3px;}
+
+/* Contentbereich1_Homepage*/
+.Contentbereich1_Homepage {
+  position: absolute;
+  width: 100%;
+  height: 600px;
+  top: 658px;
+  background-color: #3C3C3C;
+}
+
+/* Contentbereich2_Homepage*/
+.Contentbereich2_Homepage {
+  position: absolute;
+  width: 100%;
+  height: 600px;
+  top: 1358px;
+  background-color: #3C3C3C;
+}
+
+/* Teaser Kreise */
+
+.Teaserkreis {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: 10%;
+  top: 220px;
+  border: 1px;
+  border-color: #FFFFFF;
+  border-style: solid;
+  border-radius: 50%;
+}
